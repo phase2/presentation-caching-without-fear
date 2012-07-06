@@ -1,0 +1,26 @@
+// Variables
+//------------------------------------------------------------------------------
+
+// Colors
+$header: #05649C;
+$text: #625B53;
+$bg: #532D23;
+$base: #EBE1D6;
+$softlight: #1574AC;
+$highlight: #00407C;
+
+// Font Stacks
+//------------------------------------------------------------------------------
+
+$sans: Arial, Verdana, sans-serif;
+$serif: Georgia, serif;
+$mono: Monaco, monospace, sans-serif;
+
+// Grays
+//------------------------------------------------------------------------------
+$black: #000;
+$grayDark: lighten($black, 25%);
+$gray: lighten($black, 50%);
+$grayLight: lighten($black, 75%);
+$grayLighter: lighten($black, 90%);
+$white: #fff;

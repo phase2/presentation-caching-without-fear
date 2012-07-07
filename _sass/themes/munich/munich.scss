@@ -175,4 +175,20 @@ h1 {
   .step {
     page-break-after: always;
   }
+  * {
+    -webkit-print-color-adjust: exact;
+  }
+}
+
+/* Actually give our tables some oomph. */
+/* And by oomph, I mean borders. */
+
+table td {
+  border: 1px solid $text;
+  padding: .5em; 
+}
+
+table th {
+  font-weight: bold;
+  padding: 1.5em .5em .5em .5em;
 }

@@ -212,7 +212,10 @@ h1 {
 /* PRINT STYLES */
 @media print {
   .step {
-    page-break-after: always; } }
+    page-break-after: always; }
+
+  * {
+    -webkit-print-color-adjust: exact; } }
 /* Actually give our tables some oomph. */
 /* And by oomph, I mean borders. */
 table td {

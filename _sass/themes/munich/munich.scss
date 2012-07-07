@@ -175,6 +175,9 @@ h1 {
   .step {
     page-break-after: always;
   }
+  * {
+    -webkit-print-color-adjust: exact;
+  }
 }
 
 /* Actually give our tables some oomph. */

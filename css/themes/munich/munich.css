@@ -77,7 +77,7 @@ body {
   min-height: 740px;
   -webkit-font-smoothing: antialiased;
   color: #625b53;
-  background: #532d23 url('../../../images/munich/background.png?1341577804') fixed no-repeat left top; }
+  background: #532d23 url('../../../images/munich/background.png?1341632594') fixed no-repeat left top; }
 
 b, strong {
   font-weight: bold; }
@@ -213,3 +213,12 @@ h1 {
 @media print {
   .step {
     page-break-after: always; } }
+/* Actually give our tables some oomph. */
+/* And by oomph, I mean borders. */
+table td {
+  border: 1px solid #625b53;
+  padding: .5em; }
+
+table th {
+  font-weight: bold;
+  padding: 1.5em .5em .5em .5em; }

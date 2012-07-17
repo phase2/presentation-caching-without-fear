@@ -27,6 +27,6 @@ title: "Cache Clearing Event: Cron"
     </tbody>
   </table>
 
-<!--
+<div class="presenter-note">
 Cron is one of the cache clearing events where the behavior between backends differs substantially
--->
+</div>

@@ -26,6 +26,7 @@ title: "Cache Clearing Event: Cache Clear All"
       </tr>
     </tbody>
   </table>
-<!--
+
+<div class="presenter-note">
 The first cache clearing event is the one that happens when you hit the clear cache button on the performance admin screen. For all of the providers this is a cache clearing event (the N in DrupalFakeCache is because nothing is actually cached when using this one so there is nothing to clear).
--->
+</div>

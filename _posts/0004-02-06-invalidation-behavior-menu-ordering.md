@@ -27,3 +27,6 @@ title: "Drupal Invalidation Behaviors"
     </tbody>
   </table>
 
+<div class="presenter-note">
+  Mention memcache menu cache clearing bug
+</div>

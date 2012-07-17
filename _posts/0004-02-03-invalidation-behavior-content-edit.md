@@ -26,6 +26,6 @@ title: "Cache Clearing Event: Content Edit"
       </tr>
     </tbody>
   </table>
-<!--
+<div class="presenter-note">
 Content editing behaves as one would expect (and here I mean editing a node) in terms of a mass invalidation strategy as the page cache is cleared. Note the subtle difference in when items clear, for memcache it is immediate, for DB it is in min lifetime seconds but if you use a zero value for this then they are identical.
--->
+</div>

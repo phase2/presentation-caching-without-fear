@@ -27,6 +27,6 @@ title: "Drupal Invalidation Behaviors"
     </tbody>
   </table>
 
-<!--
+<div class="presenter-note">
 Memcache will clear the page cache but we have seen some issues with it not clearing the menu item cache so when the pages regenerate they do so incorrectly.
--->
+</div>

@@ -5,8 +5,9 @@ title: "Down with Invalidation"
 * Mass invalidation
 * Time To Live
 
-<div class="presenter-note">
-* Invalidation is hard, which is why caching is hard. Two common shortcuts
+<div markdown="markdown" class="presenter-note">
+* Invalidation is hard
+  * So we cheat and use two shortcuts
 * Mass invalidation
   * System drupal page cache uses
   * Easy rules

@@ -2,38 +2,52 @@
 title: Caching Levels
 ---
 
-* Filesystem buffer cache
-* MySQL Cache
-* Bytecode Cache (APC)
-* PHP Language Caches (static)
-* Drupal Caches
-  * drupal_static
-  * cache_set, cache_get
-* Accelerators
-  * Boost
-  * Varnish/Nginx/etc
-* Content Delivery Networks
-  * CloudFront
-  * Akamai
+<table markdown="markdown">
+<tr markdown="markdown">
+  <td markdown="markdown">
+    * Filesystem buffer cache
+    * MySQL Cache
+    * Bytecode Cache (APC)
+    * PHP Language Caches (static)
+    * Drupal Caches
+      * drupal_static
+      * cache_set, cache_get
+  </td>
+  <td markdown="markdown">
+    * Accelerators
+      * Boost
+      * Varnish/Nginx/etc
+    * Content Delivery Networks
+      * CloudFront
+      * Akamai
+  </td>
+</tr>
+</table>
 
-<div class="presenter-note">
-  <ul>
-    <li>Caching is pervasive in computing even when you aren't the one that's doing it.</li>
-    <li>Operating systems use spare RAM for filesystem cache</li>
-    <li>MySQL query cache, innodb buffer pool cache</li>
-    <li>Prevent need to re-read files and recompile via bytecode caches</li>
-    <li>Language caches within a processing cycle (static function variables in PHP for example)
-      <ul>
-        <li>Drupal expands access with drupal_static</li>
-        <li>Persistent caching via cache_set and cache_get</li>
-      </ul>
-    </li>
-    <li>Accelerators/Reverse Proxy Servers - cache results of requests so that we do not have to ask Drupal about them again
-      <ul>
-        <li>Boost is kind of forced into this list, between a contributed drupal cache and an accelerator</li>
-      </ul>
-    </li>
-    <li>We use content delivery networks - accelerators and reduce the physical distance between end users and content</li>
-    <li>Next slide - what we are going to focus on</li>
-  </ul>
+<div markdown="markdown" class="presenter-note">
+  * Caching is pervasive
+  * Operating systems use spare RAM for filesystem cache
+    * LinuxAteMyRam
+  * MySQL Caches
+    * Buffer pools (table data)
+    * Query cache
+  * Bytecode - APC, Zend, XCache
+    * No need to read files off of disk again
+    * No need to compile PHP to bytecode again
+  * Language caches intrarequest
+    * Static variables in C and PHP, scope
+    * Only persists during single request cycle
+  * Drupal
+    * Drupal fixes scope with drupal_static and reference return
+    * Persistent caching via cache_set and cache_get
+      * More on these later
+  * Accelerators 
+    * Page caching
+    * External to Drupal
+    * Boost is kind of forced into this list, between a drupal cache and an accelerator
+      * Combine with rsync or fileconveyer and external serving system
+  * Content Delivery Networks
+    * Multiple distributed accelerators as a business model
+    * Reduce physical distance between user and server
+  * Next slide - what we are going to focus on
 </div>

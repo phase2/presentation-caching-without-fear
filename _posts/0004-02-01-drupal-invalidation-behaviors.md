@@ -6,15 +6,22 @@ title: "Drupal Invalidation Behaviors"
 * Drupal cache modules handle them differently
 * Drupal cache versus external caches
 * Providers
-  * DrupalDatabaseCache - default
+  * DrupalDatabaseCache - core
   * MemCacheDrupal - memcache
-  * Varnish -
-  * DrupalFakeCache - install
+  * VarnishCache - varnish module
+  * DrupalFakeCache - core (install)
 
-<div class="presenter-note">
-Now that we briefly detoured into some mechanics of how Drupal and external caches communicate let us return to the internal Drupal page cache and talk about how it operates. Drupal internally uses a mass invalidation system to deal with the page cache and the things that trigger this mass invalidation are what I refer to as page cache clearing events.
-
-The gotcha is that what constitutes a cache clearing event depends on what caching backend/provider you are using. It is also important to stress that just because a page has been cleared internally to the Drupal system, users being served cached pages from systems like Varnish or CDNs will not get the new version of the page until they check back when their max-age period has passed (we will talk more about handling that later).
-
-The class names of providers we are going to talk about are
+<div markdown="markdown" class="presenter-note">
+* Back to internal cache behavior
+* Drupal uses mass invalidation, what triggers it?
+  * Page cache clearing events
+    * Caching modules handle them differently
+* Without use of other modules, remember this is just clearing the Drupal page cache
+  * Working with accelerators will be covered later
+* Some common providers
+  * DrupalDatabaseCache
+  * MemCacheDrupal
+    * Drupal 7.12, Memcache module 7.x-1.0, Varnish module 7.x-1.0, PHP Memcache module 3.0.4 $Revision: 1.83.2.36 $, Memcache server 1.4.2
+  * VarnishCache
+  * DrupalFakeCache
 </div>

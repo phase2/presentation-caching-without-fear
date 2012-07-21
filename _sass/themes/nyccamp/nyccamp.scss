@@ -9,7 +9,12 @@ body {
 }
 
 code {
+  display: block;
   font-family: Menlo, sans-serif;
+  font-size: 20px;
+  border: dashed 1px $grayDark;
+  background-color: $grayLighter;
+  padding: .25em;
 }
 
 b, strong { font-weight: bold }

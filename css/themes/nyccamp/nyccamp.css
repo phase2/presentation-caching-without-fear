@@ -14,11 +14,11 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
+  font-size: 100%;
   vertical-align: baseline; }
 
-body {
+html {
   line-height: 1; }
 
 ol, ul {
@@ -77,10 +77,15 @@ body {
   min-height: 740px;
   -webkit-font-smoothing: antialiased;
   color: #4c4c4c;
-  background: #ebeef3 url('../../../images/nyccamp/background.jpg?1342819932') fixed no-repeat left top; }
+  background: #ebeef3 url('../../../images/nyccamp/background.jpg?1342541702') fixed no-repeat left top; }
 
 code {
-  font-family: Menlo, sans-serif; }
+  display: block;
+  font-family: Menlo, sans-serif;
+  font-size: 20px;
+  border: dashed 1px #404040;
+  background-color: #e6e6e6;
+  padding: .25em; }
 
 b, strong {
   font-weight: bold; }
@@ -96,12 +101,10 @@ a {
   border-radius: 0.2em;
   -webkit-transition-property: background;
   -moz-transition-property: background;
-  -ms-transition-property: background;
   -o-transition-property: background;
   transition-property: background;
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
-  -ms-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s; }
 
@@ -128,7 +131,6 @@ h1 {
 .step {
   -webkit-transition-duration: 1s;
   -moz-transition-duration: 1s;
-  -ms-transition-duration: 1s;
   -o-transition-duration: 1s;
   transition-duration: 1s; }
 

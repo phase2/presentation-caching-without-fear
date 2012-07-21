@@ -114,7 +114,8 @@ a:hover {
 h1 {
   color: #00871c;
   font-weight: bold;
-  font-size: 2em; }
+  font-size: 2em;
+  text-align: center; }
 
 /* COMMON STEP STYLES */
 .step {

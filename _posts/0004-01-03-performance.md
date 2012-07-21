@@ -2,7 +2,7 @@
 title: "Basic Cache Controls"
 ---
 
-<img src="../images/performance-config-screen.png" align="right">
+<img src="images/performance-config-screen.png" align="right">
 
 * Cache pages for anonymous users
 * Minimum cache lifetime

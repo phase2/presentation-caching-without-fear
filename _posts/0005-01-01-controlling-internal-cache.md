@@ -3,9 +3,13 @@ title: "Controlling Caching"
 ---
 
 * drupal_page_is_cacheable
+  * `if (drupal_page_is_cacheable()) { do_something(); }`
+  * `drupal_page_is_cacheable(FALSE);`
 * DrupalFakeCache
 * Expires Header
 * Cache Tags
+  * `cache_set('some_cid', $data, $bin, time() + $expire, array('node' => array(2, 4)));`
+  * `cache_invalidate(array('node' => array(4)));`
 
 <div markdown="markdown" class="presenter-note">
 * Mechanisms offering more fine grained cache control to developers

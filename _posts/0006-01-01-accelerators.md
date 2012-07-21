@@ -9,6 +9,9 @@ title: "Accelerators"
 * Varnish
   * Telnet
   * Ban
+    * `ban req.url == "/news"`
+    * `ban obj.X-Url == "/news"`
+    * `ban obj.Content-Type ~ "image"`
 
 <div markdown="markdown" class="presenter-note">
 * Not as much access to accelerators at times so different strategy

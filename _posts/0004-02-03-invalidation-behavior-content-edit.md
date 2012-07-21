@@ -27,7 +27,7 @@ title: "Cache Clearing Event: Content Edit"
   </tbody>
 </table>
 
-<div class="presenter-note">
+<div markdown="markdown" class="presenter-note">
 * Content editing
 * Difference between memcache and database cache time of clearing
 </div>

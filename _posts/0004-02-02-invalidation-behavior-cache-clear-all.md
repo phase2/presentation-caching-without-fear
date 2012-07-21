@@ -27,9 +27,10 @@ title: "Cache Clearing Event: Cache Clear All"
   </tbody>
 </table>
 
-<div class="presenter-note">
+<div markdown="markdown" class="presenter-note">
 * Cache Clear All
 * Hit the clear cache button on the performance screen
 * For the user clearing, DB is immediate (by considering anything cached before clear invalid)
+
   * Sets cache_flush_BIN variable which garbageCollection triggers actual flush after min lifetime
 </div>

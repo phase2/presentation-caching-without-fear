@@ -29,5 +29,6 @@ title: "Cache Clearing Event: Cron"
 
 <div markdown="markdown" class="presenter-note">
 * Cron is one of the cache clearing events where the behavior between backends differs substantially
+
   * Memcache uses a debug backtrace to see if cache_clear_all was called with no arguments
 </div>

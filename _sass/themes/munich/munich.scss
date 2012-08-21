@@ -94,7 +94,7 @@ h1 {
     border: 1px solid rgba(0, 0, 0, .3);
     font-family: $sans;
     color: $text;
-    text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+    /* text-shadow: 0 2px 2px rgba(0, 0, 0, .1); */
     font-size: 28px;
     line-height: 32px;
     letter-spacing: -1px;
@@ -178,7 +178,18 @@ h1 {
   * {
     -webkit-print-color-adjust: exact;
   }
+  body {
+    background: $white;
+    background-color: $white;
+    color: $grayDark;
+  }
+  a, .slide, h1, li, td {
+    background: $white;
+    background-color: $white;
+    /* text-shadow: 0; */
+  }
 }
+/* end print */
 
 /* Actually give our tables some oomph. */
 /* And by oomph, I mean borders. */
